@@ -1,0 +1,27 @@
+# 🔑 Environment files (Contains private SMTP email passwords)
+.env
+.env.local
+.env.*.local
+
+# 📦 Compiled Go binary executables
+main
+main.exe
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 🛠️ Go Tooling & Test Files
+*.test
+*.out
+*.prof
+
+# 💻 IDE configurations (VS Code, GoLand, etc.)
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
