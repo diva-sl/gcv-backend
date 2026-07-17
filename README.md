@@ -1,73 +1,34 @@
-# GCV | Enterprise Mailing & Communications Backend
+# GCV | Enterprise Communications & Core API Engine
 
-A high-performance, secure Go backend API designed to handle communication pipelines, consultation requests, and newsletter subscriptions.
+Official backend communication engine and API framework powering consultations, inquiries, and news updates for the **GCV** corporate platform.
 
----
-
-## 👨‍💻 Lead Developer
-* **Developer Name:** Divakaran S
-* **Role:** Lead Full-Stack Engineer / Architect
-* **Contribution:** Built the complete Go backend infrastructure from scratch. Designed the secure concurrent SMTP mail dispatchers, route groups, and env configurations.
+🔗 **Official Website:** [gcvdanta.com](https://gcvdanta.com)
 
 ---
 
-## 🛠️ Tech Stack & Architecture
-
-* **Language:** Go / Golang (Compiled, concurrent, high-concurrency architecture)
-* **Web Framework:** Gin-Gonic (High-performance HTTP routing)
-* **Encryption:** `crypto/tls` (Ensures secure SSL/TLS handshakes over port 465)
-* **Variables:** GoDotEnv (Seamless configuration management)
+## 👨‍💻 Core Developer & Coordinator
+This API engine was fully developed, architected, and co-coordinated by **Divakaran S** as a core engineer and coordinator at GCV.
 
 ---
 
-## 🚀 Key Features Implemented
+## 🚀 Backend Overview & Offerings
 
-1. **Sequential Mail Dispatcher:** Designed an automated helper function (`sendEmail`) that connects via TLS to Hostinger's SMTP relays to handle communication sequences.
-2. **Double-Inquiry Notification:**
-   * **Admin Warning:** Formulates a detailed HTML summary and sends it directly to the inbox of the administrators.
-   * **Client Auto-Receipt:** Sends a personalized, styled HTML confirmation to the customer's email with a custom `Reply-To` header routing replies back to the sender.
-3. **Newsletter Subscription Route (`/api/subscribe`):**
-   * Processes email entries from the website's footer.
-   * Sends real-time alert notifications directly to **`contact@gcvdanta.com`**.
-4. **CORS Security:** Built-in middleware permitting secure cross-origin queries while avoiding header blocks during preflight pre-checks.
+The backend microservice is designed to manage GCV's enterprise communication pipelines, supporting our digital products and services catalog:
+
+1. **Secure Inquiry Relays:** Formulates structured request models and maps notifications securely to GCV operations.
+2. **Automated Customer Receipts:** Generates dynamic HTML confirmations delivered instantly to client inboxes.
+3. **Interactive Newsletter Capture:** Manages client subscription routes to coordinate future insights and product updates.
 
 ---
 
-## 📦 Local Installation & Setup
+## 🛠️ Backend Technologies
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/diva-sl/gcv-backend.git
-   cd gcv-backend
-   ```
-
-2. **Configure Environment Variables:**
-   Create a `.env` file in the root folder:
-   ```env
-   PORT=5000
-   SMTP_HOST=smtp.hostinger.com
-   SMTP_PORT=465
-   SMTP_USER=rajeshbandila@gcvdanta.com
-   SMTP_PASS=Gcvdanta@123
-   SMTP_FROM=connect@gcvdanta.com
-   ```
-
-3. **Install Dependencies:**
-   ```bash
-   go mod tidy
-   ```
-
-4. **Run Server Locally:**
-   ```bash
-   go run main.go
-   ```
-
-5. **Compile Binary:**
-   ```bash
-   go build -o main main.go
-   ```
+* **Language:** Go / Golang (High-concurrency, optimized performance)
+* **Framework:** Gin-Gonic Web Framework
+* **Security:** Secure SSL/TLS encryption for mail transport over port 465
+* **Integration:** Custom CORS headers allowing seamless frontend communications
 
 ---
 
 ## 📄 License
-Project developed for GCV Digital Product & Engineering. All rights reserved by Divakaran S.
+Project developed for GCV. All rights reserved.
