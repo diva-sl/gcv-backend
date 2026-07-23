@@ -27,7 +27,10 @@ type Project struct {
 	Solution     string             `json:"solution" bson:"solution"`
 	Architecture []string           `json:"architecture" bson:"architecture"`
 	Metrics      []Metric           `json:"metrics" bson:"metrics"`
-	SiteUrl      string             `json:"siteUrl" bson:"siteUrl"`
-	AdminUrl     string             `json:"adminUrl" bson:"adminUrl"`
-	Screenshots  []Screenshot       `json:"screenshots" bson:"screenshots"`
+	SiteUrl       string             `json:"siteUrl" bson:"siteUrl"`
+	AdminUrl      string             `json:"adminUrl" bson:"adminUrl"`
+	DesktopMockup string             `json:"desktopMockup" bson:"desktopMockup"` // Dynamic MacBook device mockup
+	TabletMockup  string             `json:"tabletMockup" bson:"tabletMockup"`   // Dynamic iPad device mockup
+	MobileMockup  string             `json:"mobileMockup" bson:"mobileMockup"`   // Dynamic iPhone device mockup
+	Screenshots   []Screenshot       `json:"screenshots" bson:"screenshots"`
 }
